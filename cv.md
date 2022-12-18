@@ -32,21 +32,27 @@ I take courses, read articles, listen to podcasts, watch videos from development
 
 ### Code example
 ```
-const getSumOfNumbers = (number, type = 'odd') => {
-	let sum = 0;
-	for (let i = 0; i <= number; i++) {
-		 const isEven = i % 2 === 0;
-		 const isOdd = !isEven;
-		 if (!type) {
-			  sum += i;
-		 } else if (isEven && type === 'even') {
-			  sum += i;
-		 } else if (isOdd && type === 'odd') {
-			  sum += i;
-		 }
-	}
+function  disc(discount){
+	clientDiscount = clientSpentToday * discount / 100
+	clientSpentToday = clientSpentToday - clientDiscount
+	console.log(clientDiscount)
+	alert(`You get a discount on ${discount}%`);
+	alert(`Thanks, ${clientInfo}! To pay ${clientSpentToday}$`)
+	clientSpentForAllTime = clientSpentToday + clientSpentForAllTime
+	alert(`For all the time in our restaurant you spent ${clientSpentForAllTime}$.`)
+}
 
-	return sum;
+if (clientSpentForAllTime >= 100 && clientSpentForAllTime < 300 ) {
+	disc(10)
+}
+else if (clientSpentForAllTime >= 300 && clientSpentForAllTime < 500) {
+	disc(20)
+}
+else if (clientSpentForAllTime >= 500) {
+	disc(30)
+}
+else if (typeof clientSpentForAllTime == 'string' && typeof clientSpentToday == 'string'){
+alert('The amount must be a number! Reload the page to try again.')
 }
 
 console.log(getSumOfNumbers(10, 'odd'));
