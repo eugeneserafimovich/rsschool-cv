@@ -1,5 +1,5 @@
 # rsschool-cv
 
-### https://eugeneserafimovich.github.io/rsschool-cv/cv
+[CV](https://eugeneserafimovich.github.io/rsschool-cv/cv)
 
-### https://eugeneserafimovich.github.io/rsschool-cv/
+[WEB CV](https://eugeneserafimovich.github.io/rsschool-cv/)
